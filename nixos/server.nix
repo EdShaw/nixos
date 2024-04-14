@@ -32,7 +32,7 @@
         };
       };
 
-      # AUto-upgrades
+      # Auto-upgrades
       system.autoUpgrade = {
         enable = true;
         dates = "daily";

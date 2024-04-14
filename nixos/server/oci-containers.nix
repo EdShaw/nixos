@@ -2,23 +2,16 @@
   imports = [
     ./oci-containers/authelia.nix
     ./oci-containers/caddy.nix
-    ./oci-containers/cloudflared.nix
-    ./oci-containers/filebrowser.nix
-    ./oci-containers/flaresolverr.nix
     ./oci-containers/gotify.nix
-    ./oci-containers/home-assistant.nix
     ./oci-containers/jellyfin.nix
     ./oci-containers/jfa-go.nix
     ./oci-containers/mailrise.nix
-    ./oci-containers/matter.nix
     ./oci-containers/nzbget.nix
     ./oci-containers/prowlarr.nix
     ./oci-containers/radarr.nix
     ./oci-containers/recyclarr.nix
     ./oci-containers/sonarr.nix
-    ./oci-containers/syncthing.nix
     ./oci-containers/transmission.nix
-    ./oci-containers/zwave.nix
   ];
 
   # Enable auto-updates

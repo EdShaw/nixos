@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
-  users.users.graham = {
-    description = "Graham Rogers";
+  users.users.edshaw = {
+    description = "Ed Shaw";
     extraGroups = [ "wheel" ];
     isNormalUser = true;
     shell = pkgs.zsh;

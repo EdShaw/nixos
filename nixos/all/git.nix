@@ -14,8 +14,8 @@
         autoSetupRemote = true;
       };
       user = {
-        email = "graham@rogers.me.uk";
-        name = "Graham Rogers";
+        email = "edwardshaw9@gmail.com";
+        name = "Ed Shaw";
       };
     };
   };

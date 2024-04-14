@@ -3,7 +3,6 @@
 
   imports = [
     ./all/archives.nix
-    ./all/boot.nix
     ./all/git.nix
     ./all/locale.nix
     ./all/users.nix
@@ -25,7 +24,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  system.autoUpgrade.flake = "github:TastyPi/nixos/main";
+  system.autoUpgrade.flake = "github:EdShaw/nixos/main";
 
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
