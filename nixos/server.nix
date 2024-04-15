@@ -1,8 +1,9 @@
-{ home-manager, ... }:
+{ home-manager, sops-nix, ... }:
 {
   system = "x86_64-linux";
   modules = [
     home-manager.nixosModules.home-manager
+    sops-nix.nixosModules.sops
 
     ../hardware/intelcpu.nix
 
@@ -19,27 +20,14 @@
     {
       networking.hostName = "server";
 
-      # Disks
-      boot.initrd.luks.devices.root.device = "/dev/disk/by-partlabel/root";
-      fileSystems = {
-        "/" = {
-          device = "/dev/mapper/root";
-          fsType = "ext4";
-        };
-        "/boot" = {
-          device = "/dev/disk/by-partlabel/boot";
-          fsType = "vfat";
-        };
-      };
-
       # Auto-upgrades
       system.autoUpgrade = {
         enable = true;
         dates = "daily";
         allowReboot = true;
         rebootWindow = {
-          lower = "02:00";
-          upper = "05:00";
+          lower = "05:00";
+          upper = "07:00";
         };
       };
     }

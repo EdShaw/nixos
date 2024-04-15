@@ -4,7 +4,6 @@
     ./oci-containers/caddy.nix
     ./oci-containers/gotify.nix
     ./oci-containers/jellyfin.nix
-    ./oci-containers/jfa-go.nix
     ./oci-containers/mailrise.nix
     ./oci-containers/nzbget.nix
     ./oci-containers/prowlarr.nix
